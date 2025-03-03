@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Search from "./components/Search";
 import Spinner from "./components/Spinner";
+import MovieCard from "./components/MovieCard";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 
@@ -36,6 +37,8 @@ export default function App() {
 
       const data = await response.json();
 
+      console.log(data);
+
       if (data.Response === "False") {
         setErrorMessage(data.Error || "No movies found");
 
@@ -56,6 +59,7 @@ export default function App() {
   useEffect(() => {
     fetchMovies();
   }, []);
+
   return (
     <main>
       <div className="pattern"></div>
@@ -81,9 +85,7 @@ export default function App() {
           ) : (
             <ul>
               {movies.map((movie) => (
-                <p key={movie.id} className="text-white">
-                  {movie.title}
-                </p>
+                <MovieCard key={movie.id} movie={movie} />
               ))}
             </ul>
           )}
