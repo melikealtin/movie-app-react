@@ -1,11 +1,9 @@
-import "./App.css";
+import React from "react";
 
-function App() {
+export default function App() {
   return (
     <div>
-      <h1>Helloo</h1>
+      <h1 class="text-6xl font-bold underline">Hello world!</h1>
     </div>
   );
 }
-
-export default App;
