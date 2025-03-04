@@ -1,12 +1,36 @@
-# React + Vite
+# Movie Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for discovering and searching movies, with trending analytics and real-time search capabilities.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+- [Screenshot](#screenshot)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This movie search application provides users with an intuitive interface to discover movies, track trending searches, and find detailed information about films. Built with modern React practices and real-time search capabilities.
+
+## Screenshots
+
+![](./public/screenshots/screenshot.png)
+![](./public/screenshots/screenshot-1.png)
+
+## Features
+
+- **Real-time Search** – Dynamic search with debounce optimization
+- **Trending Movies** – Track and display most searched movies
+- **Analytics Integration** – Search tracking with Appwrite backend
+- **Responsive Design** – Mobile-first approach with Tailwind CSS
+- **Performance Optimized** – Debounced search and efficient rendering
+
+## Technology Stack
+
+🛠️ **Built with:**
+
+- **React** – Frontend framework
+- **Tailwind CSS** – Styling and responsive design
+- **TMDB API** – Movie database integration
+- **Appwrite** – Backend as a service
